@@ -2,6 +2,8 @@ import { Profile } from './Profile/Profile';
 import user from './Profile/user';
 import data from './Statistics/data.json';
 import { Statistics } from './Statistics/statistics';
+import { FriendList } from './FriendList/FriendBox';
+import friend from './FriendList/friends.json'
 
 export const App = () => {
   return (
@@ -16,6 +18,12 @@ export const App = () => {
         followers={user.stats.followers}
       />
       <Statistics stat={data} />
+      <FriendList
+        key={friend.key}
+        avatar={friend.avatar}
+        name={friend.name}
+        isOnline={friend.isOnline}
+      />
     </div>
   );
 };
