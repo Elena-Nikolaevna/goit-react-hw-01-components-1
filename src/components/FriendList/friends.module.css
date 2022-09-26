@@ -21,7 +21,7 @@
   .item:hover,
   .item:focus {
     cursor: pointer;
-    background-color: #ededed;
+    background-color: #d3e9fd;
   }
   .avatar {
     margin-left: 30px;
