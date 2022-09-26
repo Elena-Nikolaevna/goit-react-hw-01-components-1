@@ -1,12 +1,15 @@
 import { Profile } from './Profile/Profile';
 import user from './Profile/user';
+//=======================
 import data from './Statistics/data.json';
 import { Statistics } from './Statistics/statistics';
-//import { Friend } from './FriendList/Friend';
+//=======================
 import friends from './FriendList/friends.json';
 import { FriendsList } from './FriendList/FriendsList';
-//import { FriendsList } from './FriendList/FriendBox';
-//import friends from './FriendList/friends.json';
+//========================
+//import {Transaction} from './TransactionHistory/Transaction'
+import items from './TransactionHistory/transactions.json';
+import { TransactionList } from './TransactionHistory/TransactionList';
 
 export const App = () => {
   return (
@@ -22,8 +25,7 @@ export const App = () => {
       />
       <Statistics stat={data} />
       <FriendsList friends={friends} />
-      {/* < Friend friend={friends[1]} /> */}
-      {/* <FriendsLis t friends={friends} /> */}
+      <TransactionList items={items} />
     </div>
   );
 };
