@@ -42,6 +42,12 @@
     margin: 5px;
     border-radius: 10px;
   }
+
+  .item:hover,
+  .item:focus {
+    cursor: pointer;
+    background-color: #d3e9fd;}
+
   .label,
   .percentage {
     font-size: 18px;
