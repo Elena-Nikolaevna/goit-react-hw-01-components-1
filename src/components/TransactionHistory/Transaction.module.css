@@ -1,7 +1,9 @@
 .transactionHistory {
-    width: 900px;
+    width: 1000px;
     height: auto;
     margin: 0 auto;
+    box-shadow: 0px 0px 4px 4px hsla(0, 0%, 0%, 0.2);
+    
   }
   .thead {
     color: white;
@@ -9,13 +11,18 @@
     height: 40px;
     background: #1e90ff;
     text-transform: uppercase;
+    
+    
   }
   .tbody {
     text-align: center;
     color: gray;
+    
   }
   .tr {
     height: 40px;
+    text-transform: capitalize;
+    
   }
   tbody tr:nth-child(odd) {
     background-color: #ffffff;
